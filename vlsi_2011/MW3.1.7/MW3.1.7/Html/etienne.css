@@ -1,0 +1,83 @@
+/***********************************************/
+/* etienne.css                                 */
+/***********************************************/
+
+/***********************************************/
+/* HTML tag styles                             */
+/***********************************************/ 
+
+.basic{
+	font-family: Arial;
+	color: #333333;
+	margin: 0px;
+	padding: 0px;
+	font-size: 10.0pt; 
+	font-style: normal;
+}
+.title1{
+ 	font-family: Arial;
+	font-size: 11.0pt;
+ 	color: #334d55;
+}
+
+a:link, a:visited, a:hover {
+	color: #006699;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+/* overrides decoration from previous rule for hovered links */
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Arial,sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+
+h1{
+ font-family: Verdana;
+ font-size: 120%;
+ color: #334d55;
+}
+
+h2{
+ font-size: 114%;
+ color: #006699;
+}
+
+h3{
+ font-size: 100%;
+ color: #334d55;
+}
+
+h4{
+ font-size: 100%;
+ font-weight: normal;
+ color: #333333;
+}
+
+h5{
+ font-size: 100%;
+ color: #334d55;
+}
+
+ul{
+ list-style-type: square;
+}
+
+ul ul{
+ list-style-type: disc;
+}
+
+ul ul ul{
+ list-style-type: none;
+}
+
+label{
+	font: bold 100% Arial,sans-serif;
+ color: #334d55;
+}
+
+

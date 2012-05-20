@@ -1,0 +1,8 @@
+VERSION 12/14/2003 4:04:07 PM
+FIG #C:\Documents and Settings\Administrator\My Documents\microwind2\Book mw CMOS\mathTest.MSK
+BB(11,16,18,36)
+SIMU #50.00
+REC(11,16,7,20,PO)
+TITLE 14 27  #vdd*Exp(-sqr((t-20e-9)/2e-9))*sin(2*pi*2e9*t)
+$m 1000 0 
+FFIG C:\Documents and Settings\Administrator\My Documents\microwind2\Book mw CMOS\mathTest.MSK

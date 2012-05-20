@@ -1,0 +1,17 @@
+// Test Verilog with several gates
+// xor, xnor, buf, and
+
+
+module bench3(sum,carry,carryBuf,xorb,a,b,aBuf);
+  input a,b;
+  output sum,carry,xorb,carryBuf;
+  output aBuf;
+
+  xor xor1(sum,a,b);
+  and and1(carry,a,b);
+  xnor xnor1(xorb,a,b);
+  buf myBuff(aBuf,a);
+  buf myBuff2(carryBuf,carry);
+endmodule
+
+

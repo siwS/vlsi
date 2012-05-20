@@ -1,0 +1,121 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<TITLE>Microwind 3.1 - Edit menu</TITLE>
+<META NAME="Version" CONTENT="8.0.3429">
+<link rel="stylesheet" href="etienne.css" type="text/css">
+<META NAME="Date" CONTENT="08/12/05">
+</HEAD>
+<BODY class="basic">
+<b>
+<h1>Edit Menu</h1>
+</b>
+<br>
+  <h2><a name="undo"></a>Undo</h2>
+  <blockquote>
+    <p>The Undo command (<strong>Edit -&gt; Undo</strong>) is useful to not take into account the last editing command. It is possible to undo the commands Cut, Paste, Copy, Move, Stretch, Edit and Compile.</p>
+    <p></p>
+</blockquote>
+<h2><a name="cut"></a>Cut</h2>
+<blockquote>
+    <p>Click on the <strong>Cut icon</strong>. Move the cursor to the design window, and delimit the active area with the mouse. Consequently, all the graphics included in this area are erased. Click on Undo to fix those elements back into the design.</p>
+</blockquote>
+    <ul>
+      <li>A layer is protected from erasing if you remove the tick in the palette twice. In the palette, an empty square to the right of the layer indicates a protected layer.</li>
+      <li>A layer is unprotected from erasing if you select it again in the palette. A tick in the square to the right of the layer indicates an unprotected layer.</li>
+      <li>One box only can be erased by a click inside that box when the cut command is active. The box is then erased.</li>
+    </ul>
+    <h2><a name="copy"></a>Copy</h2>
+	<blockquote>
+    <p>Click on the <strong>Copy icon</strong>. Move the cursor to the design window, and delimit the active area with the mouse. Consequently, all the graphics included in this area are copied. The external shape of the copied elements appears. Fix those copied elements at the desired location by a click on the mouse. </p>
+    <p>Click on Undo to cancel the copy command.<br>
+    </p>
+</blockquote>
+    <h2><a name="paste"></a>Paste</h2>
+	<blockquote>
+    <p>All the graphics previously deleted or copies may be fixed again on the layout at the desired location by a click on the mouse. </p>
+</blockquote>
+    <h2><a name="move_area"></a>Move area &amp; Stretch </h2>
+	<blockquote>
+    <p>To move one box, click on the &quot;<strong>Stretch,Move icon</strong>&quot; or &quot;<strong>Edit -&gt; Move Area or Stretch</strong>&quot;. Then using the mouse, draw an area that includes the box. Then, drag the mouse to the new location and release the mouse. As a result, the box has been moved the new place. Repeat the same in order to move a set of boxes. </p>
+</blockquote>
+    <ul>
+      <li>To protect a layer from moving, click in the rectangle the palette that is situated on the right side of the layer. This will remove the tick. </li>
+      <li>To stretch a box, click on one side of the box that you want to stretch. The box outline appears. Drag the mouse to the new location and release the button. The box is stretched.</li>
+      <li>To catch the desired border of the box, draw a line perpendicular to the border, entering the box.</li>
+    </ul>
+    <blockquote>
+      <p></p>
+    </blockquote>
+    <h2><a name="move_step"></a>Move step by Step</h2>
+	<blockquote>
+    <p>To move one box lambda per lambda, click &quot;<strong>Edit -&gt; Move Step by Step</strong>&quot;. Using the mouse, create an area that includes the boxes. The selection appears in yellow. Then, click the arrow until the selection has been moved the new place. The step value (in lambda) is fixed in the edit line. </p>
+</blockquote>
+    <h2><a name="flip"></a>Flip &amp; Rotate</h2>
+	<blockquote>
+    <p>To apply a rotation or a flip to one part of the design, click on<strong> Edit -&gt; Flip &amp; Rotate.</strong> Select one of the proposed action, and then delimit the area inside which the boxes will be changed.</p>
+</blockquote>
+    <ul>
+      <li>Flip horizontal </li>
+      <li>Flip vertical </li>
+      <li>Rotate 90&deg; </li>
+      <li>Rotate -90&deg;<br>
+        <br>
+      </li>
+    </ul>
+    <h2><a name="protect"></a>Protect All | Unprotect all </h2>
+	<blockquote>
+    <p>Click on &quot;<strong>View -&gt;Protect All</strong>&quot; to protect all layers for editing purpose. All ticks in the palette are removed. Click on <strong>&quot;View -&gt;Unprotect All</strong>&quot; to select all layers for editing purpose. All ticks in the palette are asserted.<br>
+    </p>
+</blockquote>
+    <h2><a name="generate"></a>Generate</h2>
+	<blockquote>
+    <p>The library contains a set of predefined layout macros such as contacts, devices and pads. Those cells are built according to design rules, and contain size parameters. To invoke the cell library click <strong>Edit -&gt; Generate</strong>.</p>
+    <P align=justify>The "Draw Box" icon is the default icon. It creates a box in the selected layer. The default layer is polysilicon. If the "Draw Box" icon is not selected, click on it. Then, move the cursor to the display window and fix the first corner of the box with a press of the mouse. Keep pressed and drag the mouse to the opposite corner of the box. Release the mouse and see how the box is created. </P>
+    <UL>
+      <LI>The active layer is selected in the palette. 
+      <LI>The red color indicates the active layer. 
+      <LI>The tick specifies that all boxes using the layer can be erased, stretched or copied. 
+      <LI>Removing the tick protects the layer.</LI>
+    </UL>
+    <p>You may also edit the following layout:</p>
+	</blockquote>
+    <ul>
+      <li>CONTACTS such as polysilicon/metal, n-diffusion/metal, p-diffusion/metal and metal/metal2 metal2/Metal3,(etc..), or stacked contacts can be obtained here. You may also click the icon in the palette. Multiple contacts can be generated when entering number of contacts in X and Y greater than one. You may also generate a polarization seal around the contact to create a pad diode protection for example. </li>
+      <li>MOS. This macro generates either a n-channel or a p-channel transistor. The parameters of the cell are the channel length (default value is given by the design rules), its width, and the number of gates. Once those parameters are defined, the device outline appears. Click on the mouse to place it in the appropriate place. </li>
+      <li>PADS. It is possible to add various items such as a single pad, a test pad (usually 30x30 &micro;m), or even a set of pads all around and to the layout using the VDD and VSS power rings. In the last case (adding more than one pad), give the number of pads each side of the chip and if need be modify the width of the VDD and VSS tracks, as well as the number of VDD/VSS pad pairs. </li>
+      <li>PATH. This command generates a path of interconnects using one single layer. The path width can be changed, as well as the alignment to the routing grid. A set of contacts can also be placed at both ends of the path. This command is very useful for VDD and VSS supply drawing and single layer interconnects. </li>
+      <li>BUS. This command generates a set of parallel lines with user-defined layer, width and spacing. This command is useful to build coupled interconnects, or bus path used in the final routing of a chip.</li>
+      <li>INDUCTOR. This command generates a coil made from use-defined metal layers. This item is used for very-high frequency oscillators. In MICROWIND2, this inductor is viewed as a simple interconnect as it does not handle inductance. <br>
+      </li>
+    </ul>
+    <h2><a name="virtual"></a>Virtual RLC</h2>
+	<blockquote>
+    <p>Three virtual elements may be added to the layout: resistance, capacitance and inductance. </p>
+    <p>RESISTANCE. Adding a resistance in the layout is interesting to handle the interconnect resistance effect in analog simulation. In practice, resistance are added in the layout of some analog circuits such as analog-to-digital converters (See ADC.MSK). To insert a resistance, do as follows:</p>
+</blockquote>
+    <ul>
+      <li>Delete a thin portion of the metal or poly interconnect in order to create two separate layers. </li>
+      <li>Click the resistance symbol in the palette or invoke &quot;Edit -&gt; Virtual RLC -&gt; Resistance&quot; </li>
+      <li>Insert the resistance in order to make the electrical bridge between the two nodes.<br>
+      </li>
+    </ul>
+    <blockquote>
+      <p>When adding a resistance, you give either a fixed value (For example 1200), or a keyword: R(poly),R(metal), or R(All). In that case, at extraction, Microwind updates the value of the resistance according to the layout and current technology.</p>
+      <p>        CAPACITANCE. Adding a virtual capacitance is interesting to investigate the behavior of a circuit when loaded by a capacitance charge, without performing its implementation. </p>
+      <p>INDUCTANCE. An inductance may be added in the layout to simulate the effect of integrated inductance, in resonant circuits for example.</p>
+      
+    </blockquote>
+    <h2><a name="duplicate"></a>Duplicate XY</h2>
+	<blockquote>
+    <p>The command &quot; Duplicate XY &quot; is very useful to generate an array of identical cells such as RAM cells for example. Click on Edit -&gt; Duplicate XY, include the elements to duplicate in an area defined by the mouse, and the following screen appears. In both X and Y, the default multiplication factor is x 2. You may adjust the space between cells. By default, the cells touch each other. Selected boxes appear in yellow on the screen.</p>
+</blockquote>
+    <h2><a name="layer"></a>Layer Connection</h2>
+	<blockquote>
+    <p>Use &quot;Connect Layers&quot; to create the appropriate contacts between two layers at the specific cursor location. The command works for any layer from the diffusion up to the highest metallization. For example, if poly and metal 3 boxes are present at the cursor location, a stack of poly/metal, metal/Metal2 and metal2/metal3 contacts will be added to the layout.</p>
+    </blockquote>
+    <p></p>
+  
+<A HREF="index.htm">Back</A>
+</BODY>
+</HTML>

@@ -1,0 +1,21 @@
+// Test Verilog of basic cells
+// For microwind2
+// 20 Jul 02
+
+
+module bench1(a,b,c,carry,s,or3,nor4,q,sel);
+  input a,b,c,sel;
+  output carry,s,or34,q,nor4;
+  wire nq;
+
+  inv inv1(c,a);
+  xor xor1(sum,a,b);
+  xnor xnor1(s,a,b);
+  and and1(carry,a,b);
+  nmos nmos1(a,b,c);
+  pmos pmos1(a,b,s);
+  nand nand3(nand3,sum,carry,a);
+  or or1(or3,s,a,b);
+  nor nor4(nor4,x,a,b,c);
+  dreg reg1(a,b,c,q,nq);
+endmodule

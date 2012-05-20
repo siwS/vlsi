@@ -1,0 +1,8 @@
+VERSION 12/14/2003 3:20:04 PM
+FIG #C:\Documents and Settings\Administrator\My Documents\microwind2\Book mw CMOS\mathRandom.MSK
+BB(1,21,8,37)
+SIMU #50.00
+REC(1,21,7,16,ME)
+TITLE 5 28  #logic(1e-9)
+$m 1000 0 
+FFIG C:\Documents and Settings\Administrator\My Documents\microwind2\Book mw CMOS\mathRandom.MSK

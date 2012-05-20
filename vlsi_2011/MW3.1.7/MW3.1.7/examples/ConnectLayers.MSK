@@ -1,0 +1,96 @@
+VERSION 7/3/2003 4:35:41 PM
+FIG #C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\ConnectLayers.MSK
+BB(3,-102,246,45)
+SIMU #5.00
+REC(53,-8,2,2,CO)
+REC(107,2,2,2,CO)
+REC(108,32,2,2,CO)
+REC(40,-8,12,3,PO)
+REC(108,21,2,9,PO)
+REC(106,30,6,6,PO)
+REC(107,-7,2,8,PO)
+REC(3,-8,15,3,PO)
+REC(52,-9,4,4,PO)
+REC(106,1,4,4,PO)
+REC(112,30,7,7,ME)
+REC(52,-9,4,4,ME)
+REC(106,1,4,4,ME)
+REC(106,30,6,6,ME)
+REC(50,22,4,15,ME)
+REC(19,21,4,17,ME)
+REC(51,27,2,2,VI)
+REC(114,32,3,3,VI)
+REC(107,2,2,2,VI)
+REC(20,27,2,2,VI)
+REC(53,-8,2,2,VI)
+REC(106,1,4,13,M2)
+REC(50,26,4,4,M2)
+REC(114,37,4,8,M2)
+REC(112,30,7,7,M2)
+REC(19,26,4,4,M2)
+REC(52,-9,4,4,M2)
+REC(51,27,2,2,V2)
+REC(53,-8,2,2,V2)
+REC(20,27,2,2,V2)
+REC(50,26,4,4,M3)
+REC(15,-8,3,14,M3)
+REC(19,26,4,4,M3)
+REC(52,-9,4,4,M3)
+REC(52,-5,3,11,M3)
+REC(51,27,2,2,V3)
+REC(20,27,2,2,V3)
+REC(19,26,4,4,M4)
+REC(50,26,4,4,M4)
+REC(20,27,2,2,V4)
+REC(51,27,2,2,V4)
+REC(48,25,9,6,M5)
+REC(17,24,9,9,M5)
+REC(110,-88,40,50,M6)
+REC(201,-89,40,50,M6)
+REC(20,-88,40,50,M6)
+REC(213,-55,5,5,V5)
+REC(19,26,5,5,V5)
+REC(203,-55,5,5,V5)
+REC(223,-55,5,5,V5)
+REC(213,-65,5,5,V5)
+REC(233,-55,5,5,V5)
+REC(223,-65,5,5,V5)
+REC(32,-54,5,5,V5)
+REC(52,-54,5,5,V5)
+REC(233,-65,5,5,V5)
+REC(203,-65,5,5,V5)
+REC(142,-64,5,5,V5)
+REC(112,-64,5,5,V5)
+REC(112,-75,5,5,V5)
+REC(132,-75,5,5,V5)
+REC(42,-54,5,5,V5)
+REC(203,-76,5,5,V5)
+REC(142,-75,5,5,V5)
+REC(122,-75,5,5,V5)
+REC(112,-54,5,5,V5)
+REC(132,-54,5,5,V5)
+REC(142,-54,5,5,V5)
+REC(122,-54,5,5,V5)
+REC(22,-54,5,5,V5)
+REC(223,-76,5,5,V5)
+REC(233,-76,5,5,V5)
+REC(213,-76,5,5,V5)
+REC(17,24,9,9,M6)
+REC(99,-78,56,31,M5)
+REC(9,-78,56,31,M5)
+REC(190,-79,56,31,M5)
+TITLE 16 -7  #Add contacts here
+$- 1000 0 
+TITLE 45 -13  #Result after using "Connect layers"
+$- 1000 0 
+TITLE 99 -13  #Contact poly/metal2 in 0.12µm
+$- 1000 0 
+TITLE 98 20  #Contact poly/metal2 in 0.8µm
+$- 1000 0 
+TITLE 191 -102  #(c) Best design
+$- 1000 0 
+TITLE 94 -102  #(b) Correct design
+$- 1000 0 
+TITLE 12 -100  #(a) Unreliable design
+$- 1000 0 
+FFIG C:\Documents and Settings\Administrator\My Documents\microwind2\Book on CMOS\ConnectLayers.MSK

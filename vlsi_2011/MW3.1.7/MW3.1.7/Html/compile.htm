@@ -1,0 +1,128 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<TITLE>Microwind 3.1 - Compile menu</TITLE>
+<META NAME="Version" CONTENT="8.0.3429">
+<link rel="stylesheet" href="etienne.css" type="text/css">
+<META NAME="Date" CONTENT="08/12/05">
+</HEAD>
+<BODY class="basic">
+<b>
+<h1>Compile Menu</h1>
+</b>
+<br>
+  <h2><a name="one"></a>Compile one line </h2>
+  <blockquote>
+    <p>The cell compiler is a specific tool designed for the automatic creation of CMOS cells from logic description. Click on <B>Compile</B> -&gt; <B>Compile One Line</B>. The menu below appears<B>.</B> The default equation corresponds to a 3 input NOR gate. If needed, one can use the keyboard in order to modify the equation and then click on <B>Compile</B>. The gate is compiled and its corresponding layout is generated.</p>
+    <P>The first item of the one-line syntax corresponds to the output name. </P>
+    <P>The letter is followed by the sign "&nbsp;=&nbsp;", the optional sign not "&nbsp;~&nbsp;", and by the list of input names separated by the operators AND "&nbsp;&amp;&nbsp;" or OR "&nbsp;|&nbsp;". If need be, parenthesis can be added. </P>
+    <P>The input and output names are 8 character strings maximum.</P>
+    <P align=center>
+    <CENTER>
+      <TABLE cellSpacing=1 cellPadding=4 width=453 border=1 class="basic">
+        <TBODY>
+          <TR>
+            <TD vAlign=top width="27%"><P><B>Cell</B></P></TD>
+            <TD vAlign=top width="73%"><P><b>Formula</b></P></TD>
+          </TR>
+          <TR>
+            <TD vAlign=top width="27%"><P>Inverter</P></TD>
+            <TD vAlign=top width="73%"><P>out=~in</font></P></TD>
+          </TR>
+          <TR>
+            <TD vAlign=top width="27%"><P>NAND gate</P></TD>
+            <TD vAlign=top width="73%"><P>n=~(a&amp;b)</font></P></TD>
+          </TR>
+          <TR>
+            <TD vAlign=top width="27%"><P>3 Input OR</P></TD>
+            <TD vAlign=top width="73%"><P>s=a|b|c</font></P></TD>
+          </TR>
+          <TR>
+            <TD vAlign=top width="27%"><P>3 Input NAND</P></TD>
+            <TD vAlign=top width="73%"><P>out=~(a&amp;b&amp;c)</font></P></TD>
+          </TR>
+          <TR>
+            <TD vAlign=top width="27%"><P>AND-OR Gate</P></TD>
+            <TD vAlign=top width="73%"><P>cgate=a&amp;(b|c)</font></P></TD>
+          </TR>
+          <TR>
+            <TD vAlign=top width="27%"><P>CARRY Cell</P></TD>
+            <TD vAlign=top width="73%"><P>cout=(a&amp;b)|(cin&amp;(a|b))</font></P></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+    </CENTER>
+    <P></P>
+    <P>TRANSISTOR SIZE. The default device size is given by the design rules. You may change the nMOS and pMOS width in the option menu before clicking on PILE.</P>
+    <P>IMPLEMENTATION. The p-channel transistors are located on the top of the n-channel transistor net. If some layout already exists near those icons, the cell origin is moved to the right until enough free space is found. If the '~' NOT operator has not been specified after the '=' sign, an inverter is added at the right hand side of the compiled cell. That is why an AND gate is compiled as a NAND gate followed by an inverter.</P>
+    <p></p>
+</blockquote>
+<h2><a name="verilog"></a>Compile Verilog File </h2>
+<blockquote>
+    <p>The cell compiler can handle layout generation from a primitive-based VERILOG description text into a layout form automatically. Click on <B>Compile</B> -&gt; <B>Compile Verilog File</B>. Select a VERILOG text file and click on "Generate". The list of primitives is given below.</p>
+    <TABLE cellSpacing=1 cellPadding=4 width=673 border=1 class="basic">
+      <TBODY>
+        <TR>
+          <TD vAlign=top width="24%"><P><B>PRIMITIVE</B></P></TD>
+          <TD vAlign=top width="31%"><P><b>NODES</b></P></TD>
+          <TD vAlign=top width="45%"><P><b>EXAMPLE</b></P></TD>
+        </TR>
+        <TR>
+          <TD vAlign=top width="24%"><P>dreg</P></TD>
+          <TD vAlign=top width="31%"><P>Inputs : Data,RESET, CLOCK; Outputs: Q, nQ</P>
+          </TD>
+          <TD vAlign=top width="45%"><P>dreg reg1(d,rst,h,q,nq);</P></TD>
+        </TR>
+        <TR>
+          <TD vAlign=top width="24%"><P>Inv, not</P></TD>
+          <TD vAlign=top width="31%"><P>Inputs : IN; Outputs: OUT</P>
+          </TD>
+          <TD vAlign=top width="45%"><P>inv inv1(s,e); // both &lsquo;inv&rsquo; and &lsquo;not&rsquo; can be used </P>
+          </TD>
+        </TR>
+        <TR>
+          <TD vAlign=top width="24%"><P>and</P></TD>
+          <TD vAlign=top width="31%"><P>Inputs : 2 to 4; Outputs: S</P>
+          </TD>
+          <TD vAlign=top width="45%"><P>and and1(s,a,b,c,d); // limit inputs to 4</P></TD>
+        </TR>
+        <TR>
+          <TD vAlign=top width="24%"><P>nand</P></TD>
+          <TD vAlign=top width="31%"><P>Inputs : 2 to 4; Outputs: S</P>
+          </TD>
+          <TD vAlign=top width="45%"><P>nand nand1(s,a,b,c,d); </P></TD>
+        </TR>
+        <TR>
+          <TD vAlign=top width="24%"><P>or</P></TD>
+          <TD vAlign=top width="31%"><P>Inputs : 2 to 4; Outputs: S</P>
+          </TD>
+          <TD vAlign=top width="45%"><P>or or3(s,a,b,c); </P></TD>
+        </TR>
+        <TR>
+          <TD vAlign=top width="24%"><P>nor</P></TD>
+          <TD vAlign=top width="31%"><P>Inputs : 2 to 4; Outputs: S</P>
+          </TD>
+          <TD vAlign=top width="45%"><P>nor my_nor4(s,a,b,c,d); </P></TD>
+        </TR>
+        <TR>
+          <TD vAlign=top width="24%"><P>xor</P></TD>
+          <TD vAlign=top width="31%"><P>Inputs : a,b; Outputs: S</P>
+          </TD>
+          <TD vAlign=top width="45%"><P>xor xor_gate(xor_out,d0,d1); </P></TD>
+        </TR>
+        <TR>
+          <TD vAlign=top width="24%"><P>Nmos</P></TD>
+          <TD vAlign=top width="31%"><P>Inputs: gate, source; Outputs: drain</P>
+          </TD>
+          <TD vAlign=top width="45%"><P>nmos nmos1(d,s,g);</P></TD>
+        </TR>
+      </TBODY>
+    </TABLE>
+</blockquote>
+    <h2>&nbsp;</h2>
+<blockquote>&nbsp;</blockquote>
+    <p></p>
+  
+<A HREF="index.htm">Back</A>
+</BODY>
+</HTML>

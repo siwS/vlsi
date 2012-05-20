@@ -1,0 +1,16 @@
+// Test Verilog
+// half adder
+// mux
+// 20 Jul 02
+
+
+module bench2(sum,sel,carry,a,b,f);
+  input a,b,sel;
+  output f,sum,carry;
+
+  mux mux1(f,a,b,sel);
+  xor xor1(sum,a,b);
+  and and1(carry,a,b);
+endmodule
+
+

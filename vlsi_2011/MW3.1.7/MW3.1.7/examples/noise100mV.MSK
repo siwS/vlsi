@@ -1,0 +1,8 @@
+VERSION 10/12/2003 11:08:36 PM
+FIG #C:\Documents and Settings\Administrator\My Documents\microwind2\Book mw CMOS\noise100mV.MSK
+BB(-11,7,-6,25)
+SIMU #5.00
+REC(-11,7,5,18,M4)
+TITLE -8 17  #noise100mV
+$s 0 0 1000.0000 0.0000 0.1000 0.0000 
+FFIG C:\Documents and Settings\Administrator\My Documents\microwind2\Book mw CMOS\noise100mV.MSK

@@ -1,0 +1,14 @@
+VERSION 10/12/2003 11:47:49 PM
+FIG #C:\Documents and Settings\Administrator\My Documents\microwind2\Book mw CMOS\BasicSignals.MSK
+BB(2,20,37,34)
+SIMU #20.00
+REC(2,20,5,12,ME)
+REC(18,20,6,13,ME)
+REC(32,21,5,13,M3)
+TITLE 5 27  #sinus1
+$s 500 250 1000.0000 0.0000 0.0000 0.0000 
+TITLE 21 25  #square
+$c 1000 0 0.9000 1.0000 1.9000 2.0000 
+TITLE 36 27  #triangle
+$c 1000 0 1.5000 1.7500 1.7510 2.0010 
+FFIG C:\Documents and Settings\Administrator\My Documents\microwind2\Book mw CMOS\BasicSignals.MSK

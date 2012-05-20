@@ -1,0 +1,8 @@
+VERSION 12/14/2003 3:11:30 PM
+FIG #C:\Documents and Settings\Administrator\My Documents\microwind2\Book mw CMOS\mathDiode.MSK
+BB(1,21,8,37)
+SIMU #10.00
+REC(1,21,7,16,ME)
+TITLE 5 28  #sin(2*pi*1e9*t)*sin(2*pi*1.45e9*t)
+$m 1000 0 
+FFIG C:\Documents and Settings\Administrator\My Documents\microwind2\Book mw CMOS\mathDiode.MSK

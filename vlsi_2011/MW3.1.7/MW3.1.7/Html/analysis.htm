@@ -1,0 +1,56 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<TITLE>Microwind 3.1 - Analysis menu</TITLE>
+<META NAME="Version" CONTENT="8.0.3429">
+<link rel="stylesheet" href="etienne.css" type="text/css">
+<META NAME="Date" CONTENT="08/12/05">
+</HEAD>
+<BODY class="basic">
+<b>
+<h1>Analysis Menu</h1>
+</b>
+<br>
+  <h2><a name="run"></a>Design Rule Checker</h2>
+  <blockquote>
+    <p>The design rule checker (DRC) scans all the design and verifies that all the minimum design rules are respected. Click on the icon above or on <B>Analysis -&gt;Design Rule Checker</B> to run the DRC. The errors are highlighted in the display window, with an appropriate message giving the nature of the error. Details about the position and type of the errors appear on the screen. To obtain more information about the design rules, click Help -&gt; Design Rules, or the user's manual.</p>
+</blockquote>
+<h2><a name="parametric"></a>Parametric Analysis</h2>
+<blockquote>
+  <p>The parametric analysis within Microwind is a powerful tool for rapid investigation of the effect of some parameter variation on the behavior of the circuit. An example of analysis may be the effect of the load capacitance on the delay of a gate. The parametric analyzer will increase automatically the capacitance, run a set of simulations and plot the result on the screen.</p>
+  <UL>
+    <LI>Click on <B>Analysis -&gt; Parametric Analysis</B> 
+        <P align=justify></P>
+    <LI>Select the desired output node on which the delay measurement or frequency measurement is performed, then. Click on a cell output node in the layout. The parametric analysis window appears. 
+        <P></P>
+    </LI>
+    <LI>In the parameter menu, choose the item "node capacitance". Give the appropriate range of analysis. 
+        <P></P>
+    </LI>
+    <LI>In the measurement menu you may choose to monitor the rise and fall delay, the power consumption, or the frequency.    </LI>
+  </UL>
+  <p>Click on "&nbsp;<B>Start Analysis</B>&nbsp;". An iterative procedure will conduct simulations and extract the relevant parameters. Example results may show the evolution of the cell delay when its output node capacitance has been changed, or the influence of temperature variations on the final value of a polarization voltage. </p>
+</blockquote>
+<h2><a name="distance"></a>Measure Distance</h2>
+<blockquote>
+  <p>The ruler gives the horizontal and vertical measurements (dx and dy) between two points, directly on the screen in lambda and in micron. The algebraic distance (d) is also given in &micro;m. The ruler is simply erased any command of the View menu (Like <B>View -&gt; Refresh ) </B>or by a press of<B> &lt;ESC&gt;.</B></p>
+</blockquote>
+<h2><a name="resonant"></a>Resonant Frequency </h2>
+<blockquote>
+  <p>Use this command to compute the resonant frequency and characteristic impedance of a couple of inductor and capacitor. The resonnant frequency is 2.pi.1/sqrt(L.C), the characteristic impedance is sqrt(L/C), where sqrt is the square root operator<SPAN style="COLOR: windowtext; mso-bidi-font-size: 9.5pt">. Furthermore, the impedance of the inductor and capacitor is estimated at a given frequency.</SPAN></p>
+</blockquote>
+<h2><a name="fem"></a>Interconnect Analysis with FEM</h2>
+<blockquote>
+  <p>Use this command to compute the R,L,C value of a given interconnect per unit length. The screen includes a Finite-Element Module that computes the electrical field between one or two conductors (Select the configuration using the four buttons on the right upper corner of the screen) and the ground plane.</p>
+  <P>The conductor section, height, thickness corresponds to the metal 1 layer. These parameters are configured by the RUL file (By default DEFAULT.RUL). You may change the values and see the effect of R,L and C.</P>
+  <P class=MsoNormal style="mso-layout-grid-align: none">The capacitance is computed using Delorme formulations <SPAN 
+style="COLOR: windowtext; mso-bidi-font-size: 9.5pt">(<I>Inductance and capacitance analytic formulas for VLSI interconnects, Electronic letters, vol 32, n&deg;11, pp 996-997, May 1996</I>). The plate capacitance (eps0. epsr.surface/distance) is also given. <o:p></o:p></SPAN><SPAN 
+style="COLOR: windowtext; mso-bidi-font-size: 9.5pt"><o:p></o:p></SPAN><SPAN 
+style="COLOR: windowtext; mso-bidi-font-size: 9.5pt">The <I>low K</I> parameters refers to the interlayer dielectric permittivity. <I>Cu</I> refers to copper material, while <I>Al</I> refers to aluminum.</SPAN></P>
+</blockquote>
+<p>&nbsp;</p>
+<p></p>
+  
+<A HREF="index.htm">Back</A>
+</BODY>
+</HTML>
